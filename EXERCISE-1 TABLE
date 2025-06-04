@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Registration Table</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f4f4;
+    }
+    table {
+      width: 60%;
+      margin: 30px auto;
+      background: #fff;
+      padding: 20px;
+      border-collapse: collapse;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    td {
+      padding: 12px;
+      vertical-align: top;
+    }
+    input[type="text"],
+    input[type="email"],
+    input[type="password"],
+    input[type="tel"],
+    input[type="date"],
+    select,
+    textarea {
+      width: 100%;
+      padding: 8px;
+      box-sizing: border-box;
+    }
+    input::placeholder {
+      color: #999;
+    }
+    .buttons {
+      text-align: center;
+    }
+    .buttons input {
+      padding: 10px 20px;
+      margin: 0 10px;
+      font-weight: bold;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .save {
+      background-color: #4CAF50;
+      color: white;
+    }
+    .reset {
+      background-color: #f44336;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+
+  <table>
+    <caption><h2>Registration Table</h2></caption>
+
+    <tr>
+      <td>First Name:</td>
+      <td><input type="text" placeholder="Enter your first name" required></td>
+    </tr>
+
+    <tr>
+      <td>Last Name:</td>
+      <td><input type="text" placeholder="Enter your last name" required></td>
+    </tr>
+
+    <tr>
+      <td>Password:</td>
+      <td><input type="password" placeholder="Enter your password" required></td>
+    </tr>
+
+    <tr>
+      <td>Re-enter Password:</td>
+      <td><input type="password" placeholder="Re-enter your password" required></td>
+    </tr>
+
+    <tr>
+      <td>Email:</td>
+      <td><input type="email" placeholder="Enter your email" required></td>
+    </tr>
+
+    <tr>
+      <td>Phone No.:</td>
+      <td><input type="tel" placeholder="Enter your phone number" required></td>
+    </tr>
+
+    <tr>
+      <td>Address:</td>
+      <td><textarea rows="3" placeholder="Enter your address" required></textarea></td>
+    </tr>
+
+    <tr>
+      <td>Gender:</td>
+      <td>
+        <label><input type="radio" name="gender"> Male</label>
+        <label><input type="radio" name="gender"> Female</label>
+        <label><input type="radio" name="gender"> Other</label>
+      </td>
+    </tr>
+
+    <tr>
+      <td>Hobbies:</td>
+      <td>
+        <label><input type="checkbox"> Reading</label>
+        <label><input type="checkbox"> Traveling</label>
+        <label><input type="checkbox"> Music</label>
+        <label><input type="checkbox"> Sports</label>
+      </td>
+    </tr>
+
+    <tr>
+      <td>Date of Birth:</td>
+      <td><input type="date" required></td>
+    </tr>
+
+    <tr>
+      <td>Country:</td>
+      <td>
+        <select required>
+          <option value="">Select Country</option>
+          <option>India</option>
+          <option>USA</option>
+          <option>UK</option>
+          <option>Australia</option>
+        </select>
+      </td>
+    </tr>
+
+    <tr>
+      <td>Upload Your Picture:</td>
+      <td><input type="file" accept="image/*" required></td>
+    </tr>
+
+    <tr>
+      <td colspan="2" class="buttons">
+        <input type="submit" class="save" value="Save My Data">
+        <input type="reset" class="reset" value="Reset Data">
+      </td>
+    </tr>
+
+  </table>
+
+</body>
+</html>
+
